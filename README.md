@@ -34,7 +34,7 @@ If you have followed the [quickstart instructions](#quickstart), then you alread
 
 The next thing to move to a different branch. Branches are a sandboxed development enviroment built from a particular commit. Since Commits or immutable, by keeping your work on a branch you ensure that noone's changes can interfere with your development enviroment. Once you are done you then merge those changes back to the main branch.  select the dropdown `...>Branch Manager` and click `New Branch` to create a new branch. 
 
-![how_to_create_branch.png](./media/how_to_create_branch.png)
+![how_to_create_branch.png](./media/how_to_create_new_branch.png)
 
 Your current working branch can be found in the source control panel of matlab. To switch branches, open the branch manager and select the branch you wish to switch to.
 
@@ -42,10 +42,8 @@ Now you write your code. When you want to save changes, save your files as you n
 
 ![how_to_commit](./media/how_to_track.png)
 
-Finally once you are done it is time to upload your changes to the cloud. To do so we will be using a pull, but this time we will be triggering it from the remote repository stored on github. By default you will not have permission to pull on your own, so instead you will submit a pull request, which a team lead can review and resolve any [merge conflicts](https://code.visualstudio.com/docs/sourcecontrol/merge-conflicts). In order to do this, install the GitHub Pull requests extension in VS Code, which will create a new panel on the left side of the screen. Open the panel and press create pull requests button beside the pull requests tab.
+Finally once you are done it is time to upload your changes to the cloud. Since matlab does not natively support pull requests, you will need permissions in order to use the built in push feature. Contact Nick for perms. But then you should be able to push by opening the branch manager and selecting push.
 
-![how_to_pull_request.png](./media/how_to_pull_request.png)
-
-Choose the base and the branch you want to merge, give the pull request a title, fill out the description and press create!
+![how_to_pull_request.png](./media/how_to_push.png)
 
 And Voila! you now can use git and develop in this repo
